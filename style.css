@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 15px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 375px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('/images/bg-intro-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 24px;
+    padding: 100px 25px 25px 25px;
+    line-height: 1.4em;
+    /* font-weight: normal; */
+}
+.text p{
+    margin-bottom: 50px;
+}
+main{
+    /* background-color: hsl(0, 100%, 74%); */
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.try{
+    /* width: inherit; */
+    padding: 15px 50px 15px 50px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0px 10px hsl(0, 51%, 59%);
+}
+.try span{
+    font-weight: bold;
+}
+
+form{
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsl(0, 51%, 59%);
+}
+
+input{
+    width: 275px;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid rgb(128,128,128);
+    border-radius: 5px;
+    /* font-weight: bolder; */
+}
+input::placeholder{
+    font-weight: 600;
+    /* color: hsl(249, 10%, 26%); */
+}
+input:focus{
+    outline: none;
+    border: 1px solid hsl(249, 10%, 26%) ;
+    /* border-color: hsl(249, 10%, 26%); */
+    font-weight: 600;
+}
+/* input:last-child{
+    margin-bottom: 15px;
+} */
+input, button{
+    font: inherit;
+}
+button{
+    margin-top: 15px;
+    width: 275px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    outline: none;
+    border:none;
+    padding: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    letter-spacing: 0.05em;
+    /* box-shadow: ; */
+    box-shadow: 0px 5px hsl(154, 91%, 33%);
+}
+.terms-condn{
+    color:hsl(246, 25%, 77%);
+    font-size: 11px;
+    margin-top: 10px;
+}
+.terms-condn span{
+    color:  hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+input:required:focus:invalid{
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position-x: 235px;
+    background-position-y: 15px;
+}
+button:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+    box-shadow: 0px 5px hsl(154, 59%, 51%);
+}
+
+@media screen and (min-width:425px) {
+    body{
+        background-image: url('/images/bg-intro-desktop.png');
+    }
+}

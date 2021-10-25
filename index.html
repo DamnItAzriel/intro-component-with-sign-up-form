@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="/script.js"></script>
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -36,15 +37,19 @@
         then $20/mo. thereafter
       </div>
       <form action="">
-        <input type="text" name="first-name" id="" placeholder="First Name" required> <br>
+        <input type="text" name="first-name" id="firstname" placeholder="First Name" required> <br>
         <!-- First Name  -->
-        <input type="text" name="last-name" id="" placeholder="Last Name" required> <br>
+        <!-- <p class=" error first-name1" id="p-fn"></p> -->
+        <input type="text" name="last-name" id="lastname" placeholder="Last Name" required> <br>
+        <!-- <p class="error lastname" id="p-ln"></p> -->
         <!-- Last Name  -->
         <!-- <input type="text" name="email-id" id="" > -->
-        <input type="email" name="email-id" id="" placeholder="Email Address" required> <br>
+        <input type="email" name="email-id" id="emailid" placeholder="Email Address" required> <br>
+        <!-- <p class="error emailid" id="p-email"></p> -->
         <!-- Email Address -->
         <!-- <input type="text" name="" id=""> -->
-        <input type="password" name="password" id="" placeholder="Password" required> <br>
+        <input type="password" name="password" id="pass" placeholder="Password" required> <br>
+        <!-- <p class="error pass" id="p-pass"></p> -->
         <!-- Password -->
         <button>
           Claim your free trial
